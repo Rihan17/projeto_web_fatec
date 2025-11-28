@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazer Pedido - Sabor & Grill</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pedido.css">
+  <link rel="shortcut icon" href="imgs/hamburguer.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-circle">S&G</div>
+        <span class="logo-text">Sabor & Grill</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#produtos">Produtos</a>
+        <a href="index.html#contato">Contato</a>
+        <button class="btn btn-outline" onclick="fazerLogout()">Sair</button>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main class="pedido-page">
+    <div class="container" style="padding-top: 2rem;">
+      <div class="pedido-header">
+        <h1 class="pedido-title">Faça Seu Pedido</h1>
+        <p class="pedido-subtitle">Escolha seus hambúrgueres favoritos</p>
+      </div>
+
+      <div class="pedido-grid">
+        <section>
+          <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Produtos Disponíveis</h2>
+          <div class="produtos-list" id="lista-produtos">
+            </div>
+        </section>
+
+        <aside class="carrinho-sidebar">
+          <div class="card" style="box-shadow: var(--shadow-xl);">
+            <div class="card-header">
+              <h2 class="card-title">Seu Carrinho</h2>
+              <p class="card-description" id="contador-carrinho">Nenhum item adicionado</p>
+            </div>
+            <div class="card-content">
+              <div id="conteudo-carrinho">
+                <div class="carrinho-empty">
+                  <div class="carrinho-empty-icon">🛒</div>
+                  <p style="color: var(--muted-foreground);">Seu carrinho está vazio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/global.js"></script>
+  <script src="js/pedido.js"></script>
+</body>
+</html>

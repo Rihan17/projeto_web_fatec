@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sabor & Grill</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="shortcut icon" href="imgs/hamburguer.png" type="image/x-icon">
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo">
+          <div class="login-logo-circle">S&G</div>
+        </div>
+        <h1 class="login-title">Entrar</h1>
+        <p class="login-subtitle">Acesse sua conta para fazer pedidos</p>
+      </div>
+
+      <form onsubmit="fazerLogin(event)" id="form" method="post">
+        <div class="form-group">
+          <label class="form-label" for="usuario">Login</label>
+          <input type="text" id="usuario" name="usuario" class="form-input" placeholder="Usuário" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" class="form-input" placeholder="Senha" required>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <button type="submit" class="btn btn-primary btn-lg btn-full">Entrar</button>
+          <a href="#" class="btn btn-outline btn-lg btn-full" >Rihan Amorim: 1291392522008 <br> Lucas Gonçalves: 1291392522001</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
